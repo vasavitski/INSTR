@@ -77,6 +77,11 @@
                 </div>
             </div>
         </div>
+        <div class="vidjet" id="vdj">
+            <div class="vidjetGetOrder"><a href="#">ПОДАТЬ ЗАЯВКУ</a></div>
+            <div class="vidjetGetOrder"><a href="#">РАССЧИТАТЬ СТОИМОСТЬ</a></div>
+            <div class="vidjetMin" id="min"><a href="#">Cвернуть >></a></div>
+        </div>
         <div class="content"></div>
         <div class="footer">
             <div class="Link_web">
@@ -206,5 +211,18 @@
                 </div>
             </div>
     </div>
+        <script>
+            document.getElementById('min').onclick = function() {
+                VidjetMin();
+            }
+
+            function VidjetMin()
+            {
+
+                var vdj = document.getElementById("vdj");
+                vdj.style.display = "none";
+            }
+        </script>
+
 </body>
 </html>
